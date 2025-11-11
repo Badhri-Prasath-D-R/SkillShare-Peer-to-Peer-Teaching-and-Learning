@@ -1,0 +1,134 @@
+{
+  "name": "Session",
+  "type": "object",
+  "properties": {
+    "title": {
+      "type": "string",
+      "description": "Session title"
+    },
+    "description": {
+      "type": "string",
+      "description": "Detailed session description"
+    },
+    "host_email": {
+      "type": "string",
+      "description": "Email of the session host"
+    },
+    "host_name": {
+      "type": "string",
+      "description": "Name of the session host"
+    },
+    "skill_category": {
+      "type": "string",
+      "enum": [
+        "programming",
+        "design",
+        "business",
+        "language",
+        "music",
+        "writing",
+        "cooking",
+        "fitness",
+        "photography",
+        "marketing",
+        "data_science",
+        "art",
+        "public_speaking",
+        "other"
+      ],
+      "description": "Main skill category"
+    },
+    "date": {
+      "type": "string",
+      "format": "date",
+      "description": "Session date"
+    },
+    "time": {
+      "type": "string",
+      "description": "Session time"
+    },
+    "duration": {
+      "type": "number",
+      "default": 60,
+      "description": "Duration in minutes"
+    },
+    "max_participants": {
+      "type": "number",
+      "default": 10,
+      "description": "Maximum number of participants"
+    },
+    "current_participants": {
+      "type": "number",
+      "default": 0,
+      "description": "Current number of participants"
+    },
+    "participant_emails": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description": "List of participant emails"
+    },
+    "session_type": {
+      "type": "string",
+      "enum": [
+        "live_video",
+        "text_discussion",
+        "screen_share"
+      ],
+      "default": "live_video",
+      "description": "Type of session"
+    },
+    "difficulty_level": {
+      "type": "string",
+      "enum": [
+        "beginner",
+        "intermediate",
+        "advanced"
+      ],
+      "default": "beginner",
+      "description": "Target difficulty level"
+    },
+    "cost_points": {
+      "type": "number",
+      "default": 2,
+      "description": "Points required to join"
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "upcoming",
+        "live",
+        "completed",
+        "cancelled"
+      ],
+      "default": "upcoming",
+      "description": "Current session status"
+    },
+    "rating_average": {
+      "type": "number",
+      "default": 0,
+      "description": "Average session rating"
+    },
+    "rating_count": {
+      "type": "number",
+      "default": 0,
+      "description": "Number of ratings"
+    },
+    "tags": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description": "Additional tags for better discovery"
+    }
+  },
+  "required": [
+    "title",
+    "description",
+    "host_email",
+    "skill_category",
+    "date",
+    "time"
+  ]
+}
