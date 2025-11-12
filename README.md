@@ -5,7 +5,6 @@
 ![TypeScript](https://img.shields.io/badge/TypeScript-5.0-3178C6?logo=typescript)
 ![MongoDB](https://img.shields.io/badge/MongoDB-47A248?logo=mongodb)
 ![Node.js](https://img.shields.io/badge/Node.js-339933?logo=nodedotjs)
-![License](https://img.shields.io/badge/License-MIT-green)
 
 ---
 
@@ -67,12 +66,12 @@ Developed as part of the **B.Tech Artificial Intelligence and Data Science** cur
 
 ### ⚙️ Quick Start
 
-#### 1. Clone Repository
 ```bash
+#### 1. Clone Repository
 git clone https://github.com/Badhri-Prasath-D-R/SkillShare-Peer-to-Peer-Teaching-and-Learning.git
 cd SkillShare-Peer-to-Peer-Teaching-and-Learning
 
-backend setup
+2. backend setup
 cd server
 npm install
 cp .env.example .env
@@ -83,18 +82,18 @@ cp .env.example .env
 
 npm run dev
 
-Frontend Setup
+3. Frontend Setup
 cd ../client
 npm install
 npm run dev
 
-Access the App
+4. Access the App
 
 Frontend → http://localhost:3000
 
 Backend → http://localhost:5000
 
-👨‍🎓 Usage Guide
+5. 👨‍🎓 Usage Guide
 For Learners
 
 Create an account and set your learning goals
@@ -113,13 +112,13 @@ Manage participants and schedules
 
 Earn badges and improve your rating
 
-🔬 Research & Academic Context
+6. 🔬 Research & Academic Context
 
 Developed under the Core Course Project (CCP)
 B.Tech Artificial Intelligence & Data Science,
 Chennai Institute of Technology
 
-⚙️ Technical Highlights
+7. ⚙️ Technical Highlights
 Frontend
 
 dashboard.tsx — user overview with statistics
@@ -140,11 +139,12 @@ WebRTC signaling for live calls
 
 Input validation and error handling
 
+8. Members
 | Name                   | ID       | Role                 | Key Contributions                   |
 | ---------------------- | -------- | -------------------- | ----------------------------------- |
-| **Sushil G**           | 24AD0301 | Full Stack Developer | UI/UX, frontend architecture        |
+| **Sushil G 👑**        | 24AD0301 | Full Stack Developer | UI/UX, frontend architecture        |
 | **Badhri Prasath D R** | 24AD0040 | Full Stack Developer | Backend APIs, database, integration |
-
+```
 <div align="center">
 🎓 SkillShare Platform
 
@@ -158,4 +158,4 @@ Sushil G (24AD0301) • Badhri Prasath D R (24AD0040)
 Institution: Chennai Institute of Technology — Dept. of AI & DS
 Academic Year: 2025–2026
 
-</div> ```
+</div>
